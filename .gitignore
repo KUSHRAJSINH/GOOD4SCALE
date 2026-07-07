@@ -1,0 +1,24 @@
+# Environment
+.env
+
+# Local database data (re-generate with ingest_kb.py)
+chroma_db/
+vector_db.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

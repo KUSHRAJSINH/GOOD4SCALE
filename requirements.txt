@@ -1,0 +1,27 @@
+# ── Core web framework ──────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-dotenv==1.0.1
+
+# ── Telephony ───────────────────────────────────────────────────────────────
+twilio==9.3.7
+
+# ── Voice pipeline ──────────────────────────────────────────────────────────
+# Pipecat with Twilio transport + Silero VAD + Whisper STT support
+pipecat-ai[silero,whisper]==1.5.0
+
+# ── STT: local Whisper (no API key, no credit card) ─────────────────────────
+openai-whisper==20240930
+
+# ── TTS: Microsoft Edge Read-Aloud (no API key, no credit card) ─────────────
+edge-tts==7.2.8
+pydub==0.25.1        # MP3 → PCM conversion for edge-tts output
+
+# ── LLM: Google Gemini ──────────────────────────────────────────────────────
+google-generativeai==0.8.3
+openai>=2.0.0
+
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+aiofiles==24.1.0
+numpy==1.26.4
