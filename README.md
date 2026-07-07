@@ -58,14 +58,6 @@ This project was built for the GOOD4SCALE voice agent task.
 
 ## Getting Started
 
-### Prerequisites
-* Python 3.10 or 3.11
-* `ffmpeg` installed on your machine.
-  * *Windows*: `winget install ffmpeg`
-  * *macOS*: `brew install ffmpeg`
-  * *Linux*: `sudo apt-get install ffmpeg`
-* A free [ngrok](https://ngrok.com) account.
-* A Twilio account with a phone number.
 
 ### 1. Installation
 Clone the repository and install the dependencies:
@@ -94,8 +86,7 @@ python server.py
 ```
 
 Configure your Twilio Phone Number webhook to point to your public ngrok endpoint:
-* **A Call Comes In Webhook**: `https://<your-subdomain>.ngrok-free.dev/voice` (HTTP POST)
-
+* **A Call Comes In Webhook**: 
 Call your configured Twilio number to begin the conversation.
 
 ---
